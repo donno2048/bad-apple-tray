@@ -10,7 +10,7 @@ I use opencv and pillow to convert the video into frames so you'll have to insta
 
 ```bat
 python main.py video.mp4 main.rc frames
-rem this command to get total frames
+rem use this command to get total frames
 rem dir /b frames | find /c /v ".gitkeep"
 rem then update main.c accordingly
 windres main.rc main.o
