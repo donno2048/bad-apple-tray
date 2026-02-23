@@ -6,7 +6,7 @@ open(argv[2], "w").close()
 with open(argv[2], "a") as file:
 	while (frame := vidcap.read())[0]:
 		file.write(f"{index} ICON \"{argv[3]}/{index}.ico\"\n")
-		fromarray(resize(frame[1], (48,)*2)).save(f"f{argv[3]}/{index}.ico", format='ICO')
+		fromarray(resize(frame[1], (48,)*2)).save(f"{argv[3]}/{index}.ico", format='ICO')
 		index += 1
 
 
